@@ -13,6 +13,11 @@ body {
   color: #444;
 }
 
+*:focus {
+  outline: 2px, solid, #d22e54;
+  outline-offset: 2px;
+}
+
 /* CONTAINER  */
 .container {
   padding-left: 30px;
@@ -21,4 +26,102 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 1160px;
+}
+
+/* SITE-HEADER  */
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SITE-LOGO */
+.site-logo {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #222;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: #d22e54;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
+.site-logo-img {
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+/* SITENAV  */
+.sitenav {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sitenav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.sitenav-link {
+  display: block;
+  text-decoration: none;
+  color: #222;
+}
+
+.sitenav-link:hover {
+  color: #d22e54;
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
+
+/* MAIN LINK  */
+.main-link {
+  display: inline-block;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 2px solid #d22e54;
+  text-transform: uppercase;
+  background-color: #d22e54;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-link:hover {
+  background-color: #fff;
+  color: #d22e54;
+}
+
+.main-link:active {
+  background-color: #d22e54;
+  color: #fff;
+  opacity: 0.6;
 }
